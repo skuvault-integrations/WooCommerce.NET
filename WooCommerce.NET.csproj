@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net461</TargetFramework>
     <PackageId>WooCommerceNET</PackageId>
-    <Version>0.7.7-beta</Version>
+    <Version>0.7.7.1-rc1</Version>
     <Authors>JamesYang@NZ</Authors>
     <Company>JamesYang@NZ</Company>
     <Description>A .NET Wrapper for WooCommerce REST API</Description>
@@ -18,8 +18,8 @@ Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Changes.md
 * v0.7.6 update
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>0.7.7.0</AssemblyVersion>
-    <SignAssembly>true</SignAssembly>
+    <AssemblyVersion>0.7.7.1</AssemblyVersion>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 

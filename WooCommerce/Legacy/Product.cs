@@ -161,8 +161,20 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// <summary>
         /// Stock quantity. If is a variable product this value will be used to control stock for all variations, unless you define stock at variation level.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public int? stock_quantity { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
+        public string stock_quantity_value { get; set; }
+
+	  public int stock_quantity
+		{
+			get
+			{
+				return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
+			}
+			set
+			{
+				this.stock_quantity_value = value.ToString();
+			}
+		}
 
         /// <summary>
         /// Controls whether or not the product is listed as “in stock” or “out of stock” on the frontend.
@@ -775,8 +787,19 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// <summary>
         /// Stock quantity. If is a variable variation this value will be used to control stock for all variations, unless you define stock at variation level.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public int? stock_quantity { get; set; }
+	  [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
+        public string stock_quantity_value { get; set; }
+	  public int stock_quantity
+		{
+			get
+			{
+				return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
+			}
+			set
+			{
+				this.stock_quantity_value = value.ToString();
+			}
+		}
 
         /// <summary>
         /// Controls whether or not the variation is listed as “in stock” or “out of stock” on the frontend.

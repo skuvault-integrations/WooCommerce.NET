@@ -164,17 +164,17 @@ namespace WooCommerceNET.WooCommerce.Legacy
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         public string stock_quantity_value { get; set; }
 
-	  public int stock_quantity
-		{
-			get
-			{
-				return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
-			}
-			set
-			{
-				this.stock_quantity_value = value.ToString();
-			}
-		}
+        public int stock_quantity
+        {
+            get
+            {
+	            return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
+            }
+            set
+            {
+	            this.stock_quantity_value = value.ToString();
+            }
+        }
 
         /// <summary>
         /// Controls whether or not the product is listed as “in stock” or “out of stock” on the frontend.
@@ -790,16 +790,16 @@ namespace WooCommerceNET.WooCommerce.Legacy
 	  [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         public string stock_quantity_value { get; set; }
 	  public int stock_quantity
-		{
-			get
-			{
-				return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
-			}
-			set
-			{
-				this.stock_quantity_value = value.ToString();
-			}
-		}
+	  {
+	  	get
+	  	{
+	  		return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
+	  	}
+	  	set
+	  	{
+	  		this.stock_quantity_value = value.ToString();
+	  	}
+	  }
 
         /// <summary>
         /// Controls whether or not the variation is listed as “in stock” or “out of stock” on the frontend.

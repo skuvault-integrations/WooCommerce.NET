@@ -162,17 +162,17 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Stock quantity. If is a variable product this value will be used to control stock for all variations, unless you define stock at variation level.
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
-        public string stock_quantity_value { get; set; }
+        public string stock_quantityValue { get; set; }
 
         public int stock_quantity
         {
             get
             {
-	            return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
+	            return string.IsNullOrWhiteSpace( stock_quantityValue ) ? 0 : int.Parse( stock_quantityValue );
             }
             set
             {
-	            this.stock_quantity_value = value.ToString();
+                this.stock_quantityValue = value.ToString();
             }
         }
 
@@ -742,8 +742,18 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Variation sale price
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "sale_price")]
-        private object sale_priceValue { get; set; }
-        public decimal? sale_price { get; set; }
+        private string sale_priceValue { get; set; }
+        public decimal? sale_price
+        {
+            get
+            {
+	            return string.IsNullOrWhiteSpace( sale_priceValue ) ? 0 : int.Parse( sale_priceValue );
+            }
+            set
+            {
+	            this.sale_priceValue = value.ToString();
+            }
+        }
 
         /// <summary>
         /// Sets the sale start date. Date in the YYYY-MM-DD format 
@@ -788,18 +798,18 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Stock quantity. If is a variable variation this value will be used to control stock for all variations, unless you define stock at variation level.
         /// </summary>
 	  [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
-        public string stock_quantity_value { get; set; }
+        public string stock_quantityValue { get; set; }
 	  public int stock_quantity
-	  {
-	  	get
-	  	{
-	  		return string.IsNullOrWhiteSpace( stock_quantity_value ) ? 0 : int.Parse( stock_quantity_value );
-	  	}
-	  	set
-	  	{
-	  		this.stock_quantity_value = value.ToString();
-	  	}
-	  }
+		{
+			get
+			{
+				return string.IsNullOrWhiteSpace( stock_quantityValue ) ? 0 : int.Parse( stock_quantityValue );
+			}
+			set
+			{
+				this.stock_quantityValue = value.ToString();
+			}
+		}
 
         /// <summary>
         /// Controls whether or not the variation is listed as “in stock” or “out of stock” on the frontend.

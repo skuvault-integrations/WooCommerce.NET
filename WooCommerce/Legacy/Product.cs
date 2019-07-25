@@ -114,7 +114,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         {
 	        get
 	        {
-		        return string.IsNullOrWhiteSpace( sale_priceValue ) ? 0 : int.Parse( sale_priceValue );
+		        return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue );
 	        }
 	        set
 	        {
@@ -757,7 +757,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         {
             get
             {
-	            return string.IsNullOrWhiteSpace( sale_priceValue ) ? 0 : int.Parse( sale_priceValue );
+	            return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue );
             }
             set
             {

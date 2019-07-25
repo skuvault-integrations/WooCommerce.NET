@@ -108,9 +108,19 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Product sale price
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "sale_price")]
-        private object sale_priceValue { get; set; }
+        private string sale_priceValue { get; set; }
 
-        public decimal? sale_price { get; set; }
+        public decimal? sale_price
+        {
+	        get
+	        {
+		        return string.IsNullOrWhiteSpace( sale_priceValue ) ? 0 : int.Parse( sale_priceValue );
+	        }
+	        set
+	        {
+		        this.sale_priceValue = value.ToString();
+	        }
+        }
 
         /// <summary>
         /// Sets the sale start date. Date in the YYYY-MM-DD format 

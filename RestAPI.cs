@@ -279,7 +279,7 @@ namespace WooCommerceNET
                 dic.Add("oauth_signature", Common.GetSHA256(wc_secret, base_request_uri));
             
             string parmstr = string.Empty;
-            foreach (var parm in dic)
+            foreach (var parm in dic.OrderBy(x => x.Key))
                 parmstr += parm.Key + "=" + Uri.EscapeDataString(parm.Value) + "&";
 
             return endpoint + "?" + parmstr.TrimEnd('&');

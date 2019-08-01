@@ -738,10 +738,10 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "price")]
-        private object priceValue { get; set; }
+        private string priceValue { get; set; }
         public decimal? price
         {
-	        get => (decimal?) priceValue;
+	        get => string.IsNullOrWhiteSpace( priceValue ) ? (decimal?)null : decimal.Parse( priceValue );
 	        set => priceValue = value.ToString();
         }
 
@@ -749,10 +749,10 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Variation regular price
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "regular_price")]
-        private object regular_priceValue { get; set; }
+        private string regular_priceValue { get; set; }
         public decimal? regular_price         
         {
-	        get => (decimal?) regular_priceValue;
+	        get => string.IsNullOrWhiteSpace( regular_priceValue ) ? (decimal?)null : decimal.Parse( regular_priceValue );
 	        set => regular_priceValue = value.ToString();
         }
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
     <PackageId>WooCommerceNET.SV</PackageId>
-    <Version>0.7.7.7-rc1</Version>
+    <Version>0.7.7.9-rc1</Version>
     <Authors>SkuVault</Authors>
     <Company>SkuVault</Company>
     <Description>A .NET Wrapper for WooCommerce REST API. This is a fork of WooCommerce.NET downgraded to .NET Framework 4.6.1.</Description>
@@ -19,7 +19,7 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
 * v0.7.6 update
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>0.7.7.7</AssemblyVersion>
+    <AssemblyVersion>0.7.7.9</AssemblyVersion>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>

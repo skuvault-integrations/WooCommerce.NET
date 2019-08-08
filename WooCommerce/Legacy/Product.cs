@@ -114,7 +114,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         {
 	        get
 	        {
-		        return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue );
+		        return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture );
 	        }
 	        set
 	        {
@@ -741,7 +741,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         private string priceValue { get; set; }
         public decimal? price
         {
-	        get => string.IsNullOrWhiteSpace( priceValue ) ? (decimal?)null : decimal.Parse( priceValue );
+	        get => string.IsNullOrWhiteSpace( priceValue ) ? (decimal?)null : decimal.Parse( priceValue, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture );
 	        set => priceValue = value.ToString();
         }
 
@@ -752,7 +752,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         private string regular_priceValue { get; set; }
         public decimal? regular_price         
         {
-	        get => string.IsNullOrWhiteSpace( regular_priceValue ) ? (decimal?)null : decimal.Parse( regular_priceValue );
+	        get => string.IsNullOrWhiteSpace( regular_priceValue ) ? (decimal?)null : decimal.Parse( regular_priceValue, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture );
 	        set => regular_priceValue = value.ToString();
         }
 
@@ -765,7 +765,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         {
             get
             {
-	            return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue );
+	            return string.IsNullOrWhiteSpace( sale_priceValue ) ? (decimal?)null : decimal.Parse( sale_priceValue, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture );
             }
             set
             {

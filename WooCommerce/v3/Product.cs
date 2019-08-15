@@ -286,6 +286,7 @@ namespace WooCommerceNET.WooCommerce.v3
         /// <summary>
         /// Product weight (kg).
         /// </summary>
+        [ Obsolete( "Do not use. Unclear weight units. For v3 api weight_unit is determined based on the country. There's a store-wide setting but no way to get it through the api. There's an api endpoint with the list of countries. But products don't have a country (customers and orders do)" ) ]
         public decimal? weight { get; set; }
 
         /// <summary>

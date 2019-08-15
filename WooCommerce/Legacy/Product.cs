@@ -256,6 +256,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Product weight in decimal format
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
+        [ Obsolete( "Beware of weight units. For legacy weight_units are part of the store object (presumably a setting). Would have to get the store" ) ]
         public string weight { get; set; }
 
         /// <summary>
@@ -867,6 +868,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// Variation weight in decimal format
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
+        [ Obsolete( "Beware of weight units. For legacy weight_units are part of the store object (presumably a setting). Would have to get the store" ) ]
         public string weight { get; set; }
 
         /// <summary>

@@ -814,7 +814,11 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "managing_stock")]
         private object managing_stockValue { get; set; }
-        public bool managing_stock => managing_stockValue.ToString() == "true";
+        public bool managing_stock
+        {
+	        get => managing_stockValue.ToString() == "true";
+	        set => managing_stockValue = value.ToString();
+        }
 
         /// <summary>
         /// Stock quantity. If is a variable variation this value will be used to control stock for all variations, unless you define stock at variation level.

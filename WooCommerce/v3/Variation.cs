@@ -179,7 +179,11 @@ namespace WooCommerceNET.WooCommerce.v3
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "manage_stock")]
         private object manage_stockValue { get; set; }
-        public bool manage_stock => manage_stockValue.ToString() == "true";
+        public bool manage_stock
+        {
+	        get => manage_stockValue.ToString() == "true";
+	        set => manage_stockValue = value.ToString();
+        }
 
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         private object stock_quantityValue { get; set; }

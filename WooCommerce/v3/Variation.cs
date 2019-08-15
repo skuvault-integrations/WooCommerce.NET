@@ -174,10 +174,12 @@ namespace WooCommerceNET.WooCommerce.v3
 
         /// <summary>
         /// Stock management at variation level. Default is false.
-        /// When Manage stock is checked, string value "parent" will be given, otherwise, it will be bool value false.
+        /// When Manage stock is unchecked but the parent product's Manage Stock is checked, string value "parent" will be given, otherwise, it will be bool value false.
+        /// Thus the check for "true" below, since can't just cast "parent" to bool
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public object manage_stock { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "manage_stock")]
+        private object manage_stockValue { get; set; }
+        public bool manage_stock => manage_stockValue.ToString() == "true";
 
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         private object stock_quantityValue { get; set; }

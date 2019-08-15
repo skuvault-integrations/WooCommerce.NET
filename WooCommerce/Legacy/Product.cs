@@ -809,9 +809,12 @@ namespace WooCommerceNET.WooCommerce.Legacy
 
         /// <summary>
         /// Enable stock management at variation level
+        /// When Manage stock is unchecked but the parent product's Manage Stock is checked, string value "parent" will be given, otherwise, it will be bool value false.
+        /// Thus the check for "true" below, since can't just cast "parent" to bool
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public bool? managing_stock { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "managing_stock")]
+        private object managing_stockValue { get; set; }
+        public bool managing_stock => managing_stockValue.ToString() == "true";
 
         /// <summary>
         /// Stock quantity. If is a variable variation this value will be used to control stock for all variations, unless you define stock at variation level.

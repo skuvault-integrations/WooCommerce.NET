@@ -816,7 +816,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         private object managing_stockValue { get; set; }
         public bool managing_stock
         {
-	        get => managing_stockValue.ToString() == "true";
+	        get => managing_stockValue?.ToString().ToLower() == "true";
 	        set => managing_stockValue = value.ToString();
         }
 

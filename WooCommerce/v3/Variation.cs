@@ -181,7 +181,7 @@ namespace WooCommerceNET.WooCommerce.v3
         private object manage_stockValue { get; set; }
         public bool manage_stock
         {
-	        get => manage_stockValue.ToString() == "true";
+	        get => manage_stockValue?.ToString().ToLower() == "true";
 	        set => manage_stockValue = value.ToString();
         }
 

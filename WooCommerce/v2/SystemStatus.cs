@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace WooCommerceNET.WooCommerce.v2
@@ -77,11 +78,19 @@ namespace WooCommerceNET.WooCommerce.v2
         public string site_url { get; set; }
 
         /// <summary>
+        /// WooCommerce version.
+        /// read-only
+        /// </summary>
+        [Obsolete( "Not returned from v3 api" )]
+        [DataMember(EmitDefaultValue = false)]
+        public string wc_version { get; set; }
+
+        /// <summary>
         /// WooCommerce version. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string wc_version { get; set; }
+        [DataMember( EmitDefaultValue = false )]
+        public string version { get; set; }
 
         /// <summary>
         /// Log directory. 

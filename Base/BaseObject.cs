@@ -57,7 +57,12 @@ namespace WooCommerceNET.Base
                         object value = objValue.GetValue(this);
 
                         if (!(value == null || value.ToString() == string.Empty))
-                            pi.SetValue(this, decimal.Parse(value.ToString(), CultureInfo.InvariantCulture));
+                        {
+                            if (decimal.TryParse(value.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal weight))
+                            {
+                                pi.SetValue(this, weight);
+                            }
+                        }
                     }
                     else if (pi.PropertyType == typeof(int?))
                     {

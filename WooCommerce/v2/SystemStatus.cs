@@ -404,13 +404,6 @@ namespace WooCommerceNET.WooCommerce.v2
         public bool? has_outdated_templates { get; set; }
 
         /// <summary>
-        /// Template overrides. 
-        /// read-only
-        /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public List<string> overrides { get; set; }
-
-        /// <summary>
         /// Parent theme name. 
         /// read-only
         /// </summary>

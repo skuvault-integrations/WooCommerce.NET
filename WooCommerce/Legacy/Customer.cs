@@ -26,7 +26,22 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public DateTime? created_at { get; set; }
+        public string created_at_value { get; set; }
+        public DateTime? created_at
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this.created_at_value))
+                    return DateTime.MinValue;
+
+                DateTime.TryParse(this.created_at_value, out DateTime date);
+                return date;
+            }
+            set
+            {
+                this.created_at_value = value?.ToString() ?? null;
+            }
+        }
 
         /// <summary>
         /// Customer email address 

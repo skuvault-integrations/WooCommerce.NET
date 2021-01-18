@@ -125,7 +125,7 @@ namespace WooCommerceNET.WooCommerce.v2
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? wp_memory_limit { get; set; }
+        public long? wp_memory_limit { get; set; }
 
         /// <summary>
         /// Is WordPress debug mode active? 

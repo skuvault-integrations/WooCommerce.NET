@@ -19,7 +19,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? id { get; set; }
+        public string id { get; set; }
 
         /// <summary>
         /// Order number 

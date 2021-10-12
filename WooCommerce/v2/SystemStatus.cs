@@ -125,7 +125,7 @@ namespace WooCommerceNET.WooCommerce.v2
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public long? wp_memory_limit { get; set; }
+        public string wp_memory_limit { get; set; }
 
         /// <summary>
         /// Is WordPress debug mode active? 
@@ -165,23 +165,24 @@ namespace WooCommerceNET.WooCommerce.v2
         /// <summary>
         /// PHP post max size. 
         /// read-only
+        /// NOTE: This sometimes exceeds the max int32
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? php_post_max_size { get; set; }
+        public string php_post_max_size { get; set; }
 
         /// <summary>
         /// PHP max execution time. 
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? php_max_execution_time { get; set; }
+        public string php_max_execution_time { get; set; }
 
         /// <summary>
         /// PHP max input vars. 
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? php_max_input_vars { get; set; }
+        public string php_max_input_vars { get; set; }
 
         /// <summary>
         /// cURL version. 
@@ -202,7 +203,7 @@ namespace WooCommerceNET.WooCommerce.v2
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? max_upload_size { get; set; }
+        public string max_upload_size { get; set; }
 
         /// <summary>
         /// MySQL version. 

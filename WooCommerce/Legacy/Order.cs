@@ -22,11 +22,11 @@ namespace WooCommerceNET.WooCommerce.Legacy
         public string id { get; set; }
 
         /// <summary>
-        /// Order number 
+        /// Order number
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? order_number { get; set; }
+        public string order_number { get; set; }
 
         /// <summary>
         /// UTC DateTime when the order was created 

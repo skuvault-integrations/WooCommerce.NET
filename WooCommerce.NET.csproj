@@ -23,6 +23,7 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
     <FileVersion>1.2.6.0</FileVersion>
+    <PackageVersion>1.2.10.0</PackageVersion>
   </PropertyGroup>
 
 </Project>

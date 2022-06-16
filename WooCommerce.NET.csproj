@@ -6,6 +6,8 @@
     <Version>1.2.13.0</Version>
     <Authors>SkuVault</Authors>
     <Company>SkuVault</Company>
+    <RepositoryUrl>https://github.com/skuvault-integrations/WooCommerce.NET.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <Description>A .NET Wrapper for WooCommerce REST API. This is a fork of WooCommerce.NET downgraded to .NET Framework 4.6.1 and a number of issues fixed</Description>
     <Copyright>Copyright ©  2015 - 2019 James Yang@NZ</Copyright>
     <PackageLicenseUrl>https://github.com/skuvault/WooCommerce.NET/blob/master/License.md</PackageLicenseUrl>

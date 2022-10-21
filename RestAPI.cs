@@ -356,7 +356,7 @@ namespace WooCommerceNET
         {
             get
             {
-                return IsLegacy ? "yyyy-MM-ddTHH:mm:ssZ" : "yyyy-MM-ddTHH:mm:ss";
+                return IsLegacy ? "yyyy-MM-ddTHH:mm:ssZ" : "yyyy-MM-ddTHH:mm:ssK";
             }
         }
     }

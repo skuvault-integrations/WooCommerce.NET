@@ -445,7 +445,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
         /// read-only
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int? rate_id { get; set; }
+        public string rate_id { get; set; }
 
         /// <summary>
         /// Tax rate code 

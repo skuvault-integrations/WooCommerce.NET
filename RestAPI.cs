@@ -348,9 +348,10 @@ namespace WooCommerceNET
             T obj;
             try
             {
-                MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(jsonString));
-                obj = (T)ser.ReadObject(stream);
-                stream.Dispose();
+                using (var stream = new MemoryStream(Encoding.UTF8.GetBytes(jsonString)))
+                {
+                    obj = (T)ser.ReadObject(stream);
+                }
             }
             catch (Exception ex)
             {

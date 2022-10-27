@@ -345,9 +345,19 @@ namespace WooCommerceNET
             };
 
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(T), settings);
-            MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(jsonString));
-            T obj = (T)ser.ReadObject(stream);
-            stream.Dispose();
+            T obj;
+            try
+            {
+                using (var stream = new MemoryStream(Encoding.UTF8.GetBytes(jsonString)))
+                {
+                    obj = (T)ser.ReadObject(stream);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(
+                    "Unable to deserialize JSON response from WooCommerce (see inner exception for more details). Raw JSON response: " + jsonString, ex);
+            }
 
             return obj;
         }

@@ -21,10 +21,11 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
 * v0.7.6 update
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.2.13.0</AssemblyVersion>
+    <AssemblyVersion>1.2.14.0</AssemblyVersion>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
-    <FileVersion>1.2.13.0</FileVersion>
+    <FileVersion>1.2.14.0</FileVersion>
+    <PackageVersion>1.2.14.0</PackageVersion>
   </PropertyGroup>
 
 </Project>

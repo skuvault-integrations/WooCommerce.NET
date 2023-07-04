@@ -1,0 +1,103 @@
+[{
+    "id": 210292,
+    "name": "",
+    "slug": "",
+    "permalink": "",
+    "date_created": "-0001-11-29T19:03:58",
+    "date_created_gmt": "-0001-11-29T19:03:58",
+    "date_modified": "-0001-11-29T19:03:58",
+    "date_modified_gmt": "-0001-11-29T19:03:58",
+    "type": "simple",
+    "status": "private",
+    "featured": false,
+    "catalog_visibility": "hidden",
+    "description": "",
+    "short_description": "",
+    "sku": "S-160-035",
+    "price": "289",
+    "regular_price": "479",
+    "sale_price": "289",
+    "date_on_sale_from": "-0001-11-29T19:03:58",
+    "date_on_sale_from_gmt": "-0001-11-29T19:03:58",
+    "date_on_sale_to": "-0001-11-29T19:03:58",
+    "date_on_sale_to_gmt": "-0001-11-29T19:03:58",
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 16,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 979,
+        "date_created": "-0001-11-29T19:03:58",
+        "date_created_gmt": "-0001-11-30T00:00:00",
+        "date_modified": "-0001-11-29T19:03:58",
+        "date_modified_gmt": "-0001-11-30T00:00:00",
+        "src": "https://cbcpfa.com/wp-content/uploads/2018/03/ar-15-front-extended-take-down-pin-stainless-steel.jpg",
+        "name": "ar-15-front-extended-take-down-pin-stainless-steel",
+        "alt": "ar 15 front extended take down pin stainless steel"
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "",
+    "related_ids": [
+      194159,
+      261425,
+      194154,
+      650,
+      126881
+    ],
+    "meta_data": [],
+    "stock_status": "instock",
+    "has_options": false,
+    "aioseo_notices": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://cbcpfa.com/wp-json/wc/v3/products/210292"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cbcpfa.com/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  }]

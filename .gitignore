@@ -22,19 +22,17 @@ Thumbs.db
 *.lib
 *.sbr
 obj/
-packages/
-.vs
+.vs/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
 *.ReSharper
 *.docstates
+.idea/
 
 #Ignore common build files
 build
 log
 *Credentials*.csv
 
-#Rider
-.idea/
-
+packages/

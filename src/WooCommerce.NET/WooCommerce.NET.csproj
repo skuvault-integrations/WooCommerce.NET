@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <PackageId>WooCommerceNET.SV</PackageId>
-    <Version>1.2.13.0</Version>
     <Authors>SkuVault</Authors>
     <Company>SkuVault</Company>
     <RepositoryUrl>https://github.com/skuvault-integrations/WooCommerce.NET.git</RepositoryUrl>
@@ -21,11 +20,8 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
 * v0.7.6 update
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.2.14.0</AssemblyVersion>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
-    <FileVersion>1.2.14.0</FileVersion>
-    <PackageVersion>1.2.14.0</PackageVersion>
   </PropertyGroup>
 
 </Project>

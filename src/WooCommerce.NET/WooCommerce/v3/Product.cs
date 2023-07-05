@@ -42,30 +42,70 @@ namespace WooCommerceNET.WooCommerce.v3
         /// The date the product was created, in the site’s timezone. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created")]
+        public string date_created_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_created
+        {
+            get
+            {
+	            DateTime.TryParse(date_created_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the product was created, as GMT. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
+        public string date_created_gmt_value { get; set; }
+        
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_created_gmt_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the product was last modified, in the site’s timezone. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_modified { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_modified")]
+        public string date_modified_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_modified
+        {
+            get
+            {
+                DateTime.TryParse(date_modified_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the product was last modified, as GMT. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_modified_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_modified_gmt")]
+        public string date_modified_gmt_value { get; set; }
 
+        [IgnoreDataMember]
+        public DateTime date_modified_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_modified_gmt_value, out var date);
+                return date;
+            }
+        }
+            
         /// <summary>
         /// Product type. Options: simple, grouped, external and variable. Default is simple.
         /// </summary>
@@ -133,26 +173,66 @@ namespace WooCommerceNET.WooCommerce.v3
         /// <summary>
         /// Start date of sale price, in the site’s timezone.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_on_sale_from { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_on_sale_from")]
+        public string date_on_sale_from_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_on_sale_from
+        {
+            get
+            {
+                DateTime.TryParse(date_on_sale_from_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// Start date of sale price, as GMT.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_on_sale_from_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_on_sale_from_gmt")]
+        public string date_on_sale_from_gmt_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_on_sale_from_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_on_sale_from_gmt_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// End date of sale price, in the site’s timezone.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_on_sale_to { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_on_sale_to")]
+        public string date_on_sale_to_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_on_sale_to
+        {
+            get
+            {
+                DateTime.TryParse(date_on_sale_to_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// End date of sale price, in the site’s timezone.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_on_sale_to_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_on_sale_to_gmt")]
+        public string date_on_sale_to_gmt_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_on_sale_to_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_on_sale_to_gmt_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// Price formatted in HTML. 
@@ -453,32 +533,72 @@ namespace WooCommerceNET.WooCommerce.v3
         public int? id { get; set; }
 
         /// <summary>
-        /// The date the image was created, in the site’s timezone. 
+        /// The date the image was created, in the site’s timezone.
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created")]
+        public string date_created_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_created
+        {
+            get
+            {
+                DateTime.TryParse(date_created_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the image was created, as GMT. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
+        public string date_created_gmt_value { get; set; }
+        
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_created_gmt_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
-        /// The date the image was last modified, in the site’s timezone. 
+        /// The date the image was last modified, in the site’s timezone.
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_modified { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_modified")]
+        public string date_modified_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_modified
+        {
+            get
+            {
+                DateTime.TryParse(date_modified_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the image was last modified, as GMT. 
         /// read-only
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_modified_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_modified_gmt")]
+        public string date_modified_gmt_value { get; set; }
+        
+        [IgnoreDataMember]
+        public DateTime date_modified_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_modified_gmt_value, out var date);
+                return date;
+            }
+        }  
 
         /// <summary>
         /// Image URL.
@@ -523,14 +643,34 @@ namespace WooCommerceNET.WooCommerce.v3
         /// <summary>
         /// The date the review was created, in the site’s timezone.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created")]
+        public string date_created_value { get; set; }
+        
+        [IgnoreDataMember]
+        public DateTime date_created
+        {
+            get
+            {
+                DateTime.TryParse(date_created_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// The date the review was created, as GMT.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public DateTime? date_created_gmt { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
+        public string date_created_gmt_value { get; set; }
+
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
+        {
+            get
+            {
+                DateTime.TryParse(date_created_gmt_value, out var date);
+                return date;
+            }
+        }
 
         /// <summary>
         /// Unique identifier for the product that the review belongs to.

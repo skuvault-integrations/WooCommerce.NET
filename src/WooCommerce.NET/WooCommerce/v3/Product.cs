@@ -45,7 +45,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_created")]
         public string date_created_value { get; set; }
 
-        public DateTime? date_created
+        [IgnoreDataMember]
+        public DateTime date_created
         {
             get
             {
@@ -60,7 +61,9 @@ namespace WooCommerceNET.WooCommerce.v3
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
         public string date_created_gmt_value { get; set; }
-        public DateTime? date_created_gmt
+        
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
         {
             get
             {
@@ -76,7 +79,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_modified")]
         public string date_modified_value { get; set; }
 
-        public DateTime? date_modified
+        [IgnoreDataMember]
+        public DateTime date_modified
         {
             get
             {
@@ -92,7 +96,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_modified_gmt")]
         public string date_modified_gmt_value { get; set; }
 
-        public DateTime? date_modified_gmt
+        [IgnoreDataMember]
+        public DateTime date_modified_gmt
         {
             get
             {
@@ -171,7 +176,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_on_sale_from")]
         public string date_on_sale_from_value { get; set; }
 
-        public DateTime? date_on_sale_from
+        [IgnoreDataMember]
+        public DateTime date_on_sale_from
         {
             get
             {
@@ -186,7 +192,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_on_sale_from_gmt")]
         public string date_on_sale_from_gmt_value { get; set; }
 
-        public DateTime? date_on_sale_from_gmt
+        [IgnoreDataMember]
+        public DateTime date_on_sale_from_gmt
         {
             get
             {
@@ -201,7 +208,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_on_sale_to")]
         public string date_on_sale_to_value { get; set; }
 
-        public DateTime? date_on_sale_to
+        [IgnoreDataMember]
+        public DateTime date_on_sale_to
         {
             get
             {
@@ -216,7 +224,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_on_sale_to_gmt")]
         public string date_on_sale_to_gmt_value { get; set; }
 
-        public DateTime? date_on_sale_to_gmt
+        [IgnoreDataMember]
+        public DateTime date_on_sale_to_gmt
         {
             get
             {
@@ -530,7 +539,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_created")]
         public string date_created_value { get; set; }
 
-        public DateTime? date_created
+        [IgnoreDataMember]
+        public DateTime date_created
         {
             get
             {
@@ -545,7 +555,9 @@ namespace WooCommerceNET.WooCommerce.v3
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
         public string date_created_gmt_value { get; set; }
-        public DateTime? date_created_gmt
+        
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
         {
             get
             {
@@ -561,7 +573,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_modified")]
         public string date_modified_value { get; set; }
 
-        public DateTime? date_modified
+        [IgnoreDataMember]
+        public DateTime date_modified
         {
             get
             {
@@ -576,7 +589,9 @@ namespace WooCommerceNET.WooCommerce.v3
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "date_modified_gmt")]
         public string date_modified_gmt_value { get; set; }
-        public DateTime? date_modified_gmt
+        
+        [IgnoreDataMember]
+        public DateTime date_modified_gmt
         {
             get
             {
@@ -630,7 +645,9 @@ namespace WooCommerceNET.WooCommerce.v3
         /// </summary>
         [DataMember(EmitDefaultValue = false, Name = "date_created")]
         public string date_created_value { get; set; }
-        public DateTime? date_created
+        
+        [IgnoreDataMember]
+        public DateTime date_created
         {
             get
             {
@@ -645,7 +662,8 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false, Name = "date_created_gmt")]
         public string date_created_gmt_value { get; set; }
 
-        public DateTime? date_created_gmt
+        [IgnoreDataMember]
+        public DateTime date_created_gmt
         {
             get
             {

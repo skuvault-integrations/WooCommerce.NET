@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooCommerce.NET.Tests", "WooCommerce.NET.Tests\WooCommerce.NET.Tests.csproj", "{2A595483-656A-476E-BADE-294B24F3DFE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooCommerce.NET.Tests", "tests\WooCommerce.NET.Tests\WooCommerce.NET.Tests.csproj", "{2A595483-656A-476E-BADE-294B24F3DFE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooCommerce.NET", "WooCommerce.NET\WooCommerce.NET.csproj", "{1C20211D-20F4-4D21-9752-B724D20679EA}"
 EndProject

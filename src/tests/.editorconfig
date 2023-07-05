@@ -1,0 +1,14 @@
+﻿[*.cs]
+# There are warnings below that we want to suppress in projects with tests.
+
+# AsyncFixer02: Long-running or blocking operations inside an async method. 
+# Explanation: We want to suppress it to be able to call sync methods inside async in tests.
+dotnet_diagnostic.AsyncFixer02.severity = none
+
+# CA1305: Specify IFormatProvider.
+# Explanation: We don't want to complicate tests by passing IFormatProvider.
+dotnet_diagnostic.CA1305.severity = none
+
+# CA1707: Identifiers should not contain underscores.
+# Explanation: We want to use underscores in test name.
+dotnet_diagnostic.CA1707.severity = none

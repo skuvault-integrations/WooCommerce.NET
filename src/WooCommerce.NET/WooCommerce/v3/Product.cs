@@ -49,13 +49,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_value))
-                    return DateTime.MinValue;
-
-                DateTime.TryParse(date_created_value, out var date);
+	            DateTime.TryParse(date_created_value, out var date);
                 return date;
             }
-            set => date_created_value = value?.ToString();
         }
 
         /// <summary>
@@ -68,13 +64,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_created_gmt_value, out var date);
                 return date;
             }
-            set => date_created_gmt_value = value?.ToString();
         }
 
         /// <summary>
@@ -88,13 +80,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_modified_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_modified_value, out var date);
                 return date;
             }
-            set => date_modified_value = value?.ToString();
         }
 
         /// <summary>
@@ -108,13 +96,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_modified_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_modified_gmt_value, out var date);
                 return date;
             }
-            set => date_modified_gmt_value = value?.ToString();
         }
             
         /// <summary>
@@ -191,13 +175,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_on_sale_from_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_on_sale_from_value, out var date);
                 return date;
             }
-            set => date_on_sale_from_value = value?.ToString();
         }
 
         /// <summary>
@@ -210,13 +190,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_on_sale_from_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_on_sale_from_gmt_value, out var date);
                 return date;
             }
-            set => date_on_sale_from_gmt_value = value?.ToString();
         }
 
         /// <summary>
@@ -229,13 +205,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_on_sale_to_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_on_sale_to_value, out var date);
                 return date;
             }
-            set => date_on_sale_to_value = value?.ToString();
         }
 
         /// <summary>
@@ -248,13 +220,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_on_sale_to_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_on_sale_to_gmt_value, out var date);
                 return date;
             }
-            set => date_on_sale_to_gmt_value = value?.ToString();
         }
 
         /// <summary>
@@ -566,13 +534,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_created_value, out var date);
                 return date;
             }
-            set => date_created_value = value?.ToString();
         }
 
         /// <summary>
@@ -585,13 +549,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_created_gmt_value, out var date);
                 return date;
             }
-            set => date_created_gmt_value = value?.ToString();
         }
 
         /// <summary>
@@ -605,13 +565,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_modified_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_modified_value, out var date);
                 return date;
             }
-            set => date_modified_value = value?.ToString();
         }
 
         /// <summary>
@@ -624,13 +580,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_modified_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_modified_gmt_value, out var date);
                 return date;
             }
-            set => date_modified_gmt_value = value?.ToString();
         }  
 
         /// <summary>
@@ -682,13 +634,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_created_value, out var date);
                 return date;
             }
-            set => date_created_value = value?.ToString();
         }
 
         /// <summary>
@@ -701,13 +649,9 @@ namespace WooCommerceNET.WooCommerce.v3
         {
             get
             {
-                if (string.IsNullOrEmpty(date_created_gmt_value))
-                    return DateTime.MinValue;
-
                 DateTime.TryParse(date_created_gmt_value, out var date);
                 return date;
             }
-            set => date_created_gmt_value = value?.ToString();
         }
 
         /// <summary>

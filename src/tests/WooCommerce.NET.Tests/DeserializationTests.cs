@@ -8,7 +8,7 @@ using WooCommerceNET.WooCommerce.v3;
 namespace WooCommerce.NET.Tests
 {
 	[TestFixture]
-	public class RestApiTests
+	public class DeserializationTests
 	{
 		[Test]
 		public void DeserializeJSon_ProductsHaveDateTimeMinValue_WhenDatesAreIncorrect()

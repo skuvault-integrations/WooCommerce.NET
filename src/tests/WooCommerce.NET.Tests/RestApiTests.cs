@@ -18,7 +18,7 @@ namespace WooCommerce.NET.Tests
 
 			var jsonResponse =
 				File.ReadAllText(
-					@"..\..\Files\ProductsJsonResponse_WhenDatesAreIncorrect.txt");
+					@"..\..\Files\ProductsJsonResponse_WhenDatesAreIncorrect.json");
 
 			// act
 			var products = restApiV3.DeserializeJSon<List<Product>>(jsonResponse);
@@ -47,7 +47,7 @@ namespace WooCommerce.NET.Tests
 
 			var jsonResponse =
 				File.ReadAllText(
-					@"..\..\Files\ProductsJsonResponse_WhenDatesAreCorrect.txt");
+					@"..\..\Files\ProductsJsonResponse_WhenDatesAreCorrect.json");
 
 			// act
 			var products = restApiV3.DeserializeJSon<List<Product>>(jsonResponse);

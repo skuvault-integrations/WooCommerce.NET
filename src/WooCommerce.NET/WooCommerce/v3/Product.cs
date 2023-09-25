@@ -319,8 +319,16 @@ namespace WooCommerceNET.WooCommerce.v3
         /// <summary>
         /// Stock management at product level. Default is false.
         /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public bool? manage_stock { get; set; }
+        [DataMember(EmitDefaultValue = false, Name = "manage_stock")]
+        private object manage_stockValue { get; set; }
+        
+        /// <summary>
+        /// Stock management at product level. Default is false.
+        /// When Manage stock is checked, string value "parent" will be given, otherwise, it will be bool value false.
+        /// The "parent" should appear in Variation object, however, when getting Products with variation SKU as parameter, 
+        /// variation object with "parent" value returned in product endpoints. That's why we have to set manage_stock type as object in Product object as well.
+        /// </summary>
+        public bool manage_stock => manage_stockValue?.ToString().ToLower() == "parent";
 
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         private object stock_quantityValue { get; set; }

@@ -26,7 +26,7 @@ namespace WooCommerce.NET.Tests
 			@"..\..\Files\ProductsJsonResponse_WhenDatesAreEmpty.json",
 			"0001-01-01T00:00:00",
 			TestName = "DeserializeJSon_ProductsHaveDateTimeMinValue_WhenDatesAreEmpty")]
-		public void DeserializeJson(string fileName, string expectedDateValue)
+		public void DateTimeDeserializeJson(string fileName, string expectedDateValue)
 		{
 			// arrange
 			var restApiV3 = new RestAPI("wp-json/wc/v3", "", "");
@@ -51,6 +51,33 @@ namespace WooCommerce.NET.Tests
 			Assert.That(products[0].images[0].date_created_gmt, Is.EqualTo(expectedDate));
 			Assert.That(products[0].images[0].date_modified, Is.EqualTo(expectedDate));
 			Assert.That(products[0].images[0].date_modified_gmt, Is.EqualTo(expectedDate));
+		}
+		
+		[TestCase(
+			@"..\..\Files\ProductsJsonResponse_WhenManageStockValueIsParent.json",
+			true,
+			TestName = "DeserializeJSon_ManageStockIsTrue_WhenManageStockValueIsParent")]
+		[TestCase(
+			@"..\..\Files\ProductsJsonResponse_WhenManageStockValueIsNull.json",
+			false,
+			TestName = "DeserializeJSon_ManageStockIsFalse_WhenManageStockValueIsNull")]
+		[TestCase(
+			@"..\..\Files\ProductsJsonResponse_WhenManageStockValueIsFalse.json",
+			false,
+			TestName = "DeserializeJSon_ManageStockIsFalse_WhenManageStockValueIsFalse")]
+		public void ManageStockDeserializeJson(string fileName, bool expectedManageStock)
+		{
+			// arrange
+			var restApiV3 = new RestAPI("wp-json/wc/v3", "", "");
+
+			var jsonResponse = File.ReadAllText(fileName);
+
+			// act
+			var products = restApiV3.DeserializeJSon<List<Product>>(jsonResponse);
+
+			// assert
+			Assert.That(products.Count, Is.EqualTo(1));
+			Assert.That(products[0].manage_stock, Is.EqualTo(expectedManageStock));
 		}
 	}
 }

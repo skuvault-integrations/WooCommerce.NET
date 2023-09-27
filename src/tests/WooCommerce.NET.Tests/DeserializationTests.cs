@@ -58,6 +58,10 @@ namespace WooCommerce.NET.Tests
 			true,
 			TestName = "DeserializeJSon_ManageStockIsTrue_WhenManageStockValueIsParent")]
 		[TestCase(
+			@"..\..\Files\ProductsJsonResponse_WhenManageStockValueIsTrue.json",
+			true,
+			TestName = "DeserializeJSon_ManageStockIsFalse_WhenManageStockValueIsTrue")]
+		[TestCase(
 			@"..\..\Files\ProductsJsonResponse_WhenManageStockValueIsNull.json",
 			false,
 			TestName = "DeserializeJSon_ManageStockIsFalse_WhenManageStockValueIsNull")]

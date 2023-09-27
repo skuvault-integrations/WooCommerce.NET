@@ -328,7 +328,7 @@ namespace WooCommerceNET.WooCommerce.v3
         /// The "parent" should appear in Variation object, however, when getting Products with variation SKU as parameter, 
         /// variation object with "parent" value returned in product endpoints. That's why we have to set manage_stock type as object in Product object as well.
         /// </summary>
-        public bool manage_stock => manage_stockValue?.ToString().ToLower() == "parent";
+        public bool manage_stock => manage_stockValue?.ToString().ToLower() == "parent" || manage_stockValue?.ToString().ToLower() == "true";
 
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         private object stock_quantityValue { get; set; }

@@ -327,6 +327,7 @@ namespace WooCommerceNET.WooCommerce.v3
         /// When Manage stock is checked, string value "parent" will be given, otherwise, it will be bool value false.
         /// The "parent" should appear in Variation object, however, when getting Products with variation SKU as parameter, 
         /// variation object with "parent" value returned in product endpoints. That's why we have to set manage_stock type as object in Product object as well.
+        /// For more information go to <see href="http://github.com/XiaoFaye/WooCommerce.NET/blob/03f6ac114c15c3f83f3c7dff3c03b61f41a33fa8/WooCommerce/v3/Product.cs#L260">link</see>
         /// </summary>
         public bool manage_stock => manage_stockValue?.ToString().ToLower() == "parent" || manage_stockValue?.ToString().ToLower() == "true";
 

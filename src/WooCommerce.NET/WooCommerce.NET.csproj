@@ -21,7 +21,8 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>x64;AnyCPU</Platforms>
   </PropertyGroup>
 
 </Project>

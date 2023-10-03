@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
@@ -81,41 +81,7 @@ namespace WooCommerceNET.Base
                 }
             }
         }
-
-
-        //[OnDeserializing]
-        //void tset(StreamingContext ctx)
-        //{
-        //    if (GetType().Name.Contains("ProductMeta"))
-        //        foreach (PropertyInfo pi in GetType().GetRuntimeProperties())
-        //        {
-
-        //        }
-        //}
     }
-
-    //public class MyCustomerResolver : DataContractResolver
-    //{
-    //    public override bool TryResolveType(Type dataContractType, Type declaredType, DataContractResolver knownTypeResolver, out XmlDictionaryString typeName, out XmlDictionaryString typeNamespace)
-    //    {
-    //        if (dataContractType == typeof(string))
-    //        {
-    //            XmlDictionary dictionary = new XmlDictionary();
-    //            typeName = dictionary.Add("SomeCustomer");
-    //            typeNamespace = dictionary.Add("http://tempuri.com");
-    //            return true;
-    //        }
-    //        else
-    //        {
-    //            return knownTypeResolver.TryResolveType(dataContractType, declaredType, null, out typeName, out typeNamespace);
-    //        }
-    //    }
-
-    //    public override Type ResolveName(string typeName, string typeNamespace, Type declaredType, DataContractResolver knownTypeResolver)
-    //    {
-    //        throw new NotImplementedException();
-    //    }
-    //}
 
     public class BatchObject<T>
     {
@@ -145,17 +111,33 @@ namespace WooCommerceNET.Base
 
         public async Task<T> Get(int id, Dictionary<string, string> parms = null)
         {
-            return API.DeserializeJSon<T>(await API.GetRestful(APIEndpoint + "/" + id.ToString(), parms).ConfigureAwait(false));
+            var item = await API.GetRestful(APIEndpoint + "/" + id.ToString(), parms).ConfigureAwait(false);
+            return API.DeserializeJSon<T>(item);
         }
 
         public async Task<T> Get(string email, Dictionary<string, string> parms = null)
         {
-            return API.DeserializeJSon<T>(await API.GetRestful(APIEndpoint + "/" + email, parms).ConfigureAwait(false));
+            var item = await API.GetRestful(APIEndpoint + "/" + email, parms).ConfigureAwait(false);
+            return API.DeserializeJSon<T>(item);
+        }
+
+        /// <summary>
+        /// Implements getting a list of items with custom deserialization
+        /// This solves a problem of correctly retrieving the product settings api (GUARD-3110)
+        /// </summary>
+        /// <typeparam name="T2"></typeparam>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public async Task<List<T2>> GetList<T2>(string name)
+        {
+            var items = await API.GetRestful(APIEndpoint + "/" + name).ConfigureAwait(false);
+            return API.DeserializeJSon<List<T2>>(items);
         }
 
         public async Task<List<T>> GetAll(Dictionary<string, string> parms = null)
         {
-            return API.DeserializeJSon<List<T>>(await API.GetRestful(APIEndpoint, parms).ConfigureAwait(false));
+            var item = await API.GetRestful(APIEndpoint, parms).ConfigureAwait(false);
+            return API.DeserializeJSon<List<T>>(item);
         }
 
         public async Task<T> Get()

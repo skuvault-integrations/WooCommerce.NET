@@ -329,7 +329,7 @@ namespace WooCommerceNET.WooCommerce.v3
         /// variation object with "parent" value returned in product endpoints. That's why we have to set manage_stock type as object in Product object as well.
         /// For more information go to <see href="http://github.com/XiaoFaye/WooCommerce.NET/blob/03f6ac114c15c3f83f3c7dff3c03b61f41a33fa8/WooCommerce/v3/Product.cs#L260">link</see>
         /// </summary>
-        public bool manage_stock => manage_stockValue?.ToString().ToLower() == "parent" || manage_stockValue?.ToString().ToLower() == "true";
+        public bool manage_stock => manage_stockValue?.ToString().ToLower() == "true";
 
         [DataMember(EmitDefaultValue = false, Name = "stock_quantity")]
         private object stock_quantityValue { get; set; }

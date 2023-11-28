@@ -9,7 +9,6 @@
     <RepositoryType>git</RepositoryType>
     <Description>A .NET Wrapper for WooCommerce REST API. This is a fork of WooCommerce.NET downgraded to .NET Framework 4.6.1 and a number of issues fixed</Description>
     <Copyright>Copyright ©  2015 - 2019 James Yang@NZ</Copyright>
-    <PackageLicenseUrl>https://github.com/skuvault/WooCommerce.NET/blob/master/License.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/skuvault/WooCommerce.NET</PackageProjectUrl>
     <PackageReleaseNotes>This is a fork of WooCommerce.NET downgraded to .NET Framework 4.6.1. WooCommerce.NET is a .NET library for calling WooCommerce REST API in any .NET applications. 
 
@@ -21,7 +20,6 @@ Origin Changes Doc: https://github.com/XiaoFaye/WooCommerce.NET/blob/master/Chan
   1. Supporting WooCommerce Restful API V3.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>sn.key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
 </Project>

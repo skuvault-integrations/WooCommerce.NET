@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using WooCommerceNET.Base;
@@ -411,11 +411,12 @@ namespace WooCommerceNET.WooCommerce.v3
         [DataMember(EmitDefaultValue = false)]
         public string shipping_class_id { get; set; }
 
-        /// <summary>
-        /// Allow reviews. Default is true.
-        /// </summary>
-        [DataMember(EmitDefaultValue = false)]
-        public bool? reviews_allowed { get; set; }
+        // Remove, since it's not being used by the sync and causes deserialization issue of value reviews_allowed (see GUARD-3207)
+        ///// <summary>
+        ///// Allow reviews. Default is true.
+        ///// </summary>
+        //[DataMember(EmitDefaultValue = false)]
+        //public bool? reviews_allowed { get; set; }
 
         /// <summary>
         /// Reviews average rating. 

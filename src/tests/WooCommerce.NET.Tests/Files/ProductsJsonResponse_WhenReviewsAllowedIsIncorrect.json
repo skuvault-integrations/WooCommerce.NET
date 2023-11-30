@@ -1,0 +1,253 @@
+[
+	{
+		"id": 501229,
+		"name": "NorthCoast Pro - Featured Listing (1 Year)",
+		"slug": "northcoast-pro-add-on-featured-1-year",
+		"permalink": "https://northcoastkeyless.com/product/northcoast-pro-add-on-featured-1-year/",
+		"date_created": "2021-02-18T11:43:15",
+		"date_created_gmt": "2021-02-18T16:43:15",
+		"date_modified": "2023-08-17T03:19:27",
+		"date_modified_gmt": "2023-08-17T07:19:27",
+		"type": "drts_nck_pros_dir_ltg__addon",
+		"status": "publish",
+		"featured": false,
+		"catalog_visibility": "hidden",
+		"description": "",
+		"short_description": "",
+		"sku": "NCK-PRO-365",
+		"price": "9.94",
+		"regular_price": "49.94",
+		"sale_price": "9.94",
+		"date_on_sale_from": null,
+		"date_on_sale_from_gmt": null,
+		"date_on_sale_to": null,
+		"date_on_sale_to_gmt": null,
+		"on_sale": true,
+		"purchasable": true,
+		"total_sales": 2,
+		"virtual": true,
+		"downloadable": true,
+		"downloads": [],
+		"download_limit": -1,
+		"download_expiry": -1,
+		"external_url": "",
+		"button_text": "",
+		"tax_status": "taxable",
+		"tax_class": "",
+		"manage_stock": false,
+		"stock_quantity": null,
+		"backorders": "no",
+		"backorders_allowed": false,
+		"backordered": false,
+		"low_stock_amount": null,
+		"sold_individually": true,
+		"weight": "",
+		"dimensions": {
+			"length": "",
+			"width": "",
+			"height": ""
+		},
+		"shipping_required": false,
+		"shipping_taxable": false,
+		"shipping_class": "",
+		"shipping_class_id": 0,
+		"reviews_allowed": "closed",
+		"average_rating": "0.00",
+		"rating_count": 0,
+		"upsell_ids": [],
+		"cross_sell_ids": [],
+		"parent_id": 0,
+		"purchase_note": "",
+		"categories": [
+			{
+				"id": 3405,
+				"name": "Swag",
+				"slug": "swag"
+			}
+		],
+		"tags": [],
+		"images": [],
+		"attributes": [],
+		"default_attributes": [],
+		"variations": [],
+		"grouped_products": [],
+		"menu_order": 0,
+		"price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>49.94</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>9.94</bdi></span></ins>",
+		"related_ids": [
+			74925,
+			501215,
+			501228,
+			501123
+		],
+		"meta_data": [
+			{
+				"id": 8695420,
+				"key": "wcwl_stock_level",
+				"value": "0"
+			},
+			{
+				"id": 8695421,
+				"key": "wcwl_stock_level",
+				"value": "0"
+			},
+			{
+				"id": 8695422,
+				"key": "wcwl_stock_level",
+				"value": "0"
+			},
+			{
+				"id": 8695424,
+				"key": "wcwl_stock_level",
+				"value": "0"
+			},
+			{
+				"id": 8695425,
+				"key": "wwpp_post_meta_enable_quantity_discount_rule",
+				"value": ""
+			},
+			{
+				"id": 8695426,
+				"key": "_wcrp_all_related_ids",
+				"value": []
+			},
+			{
+				"id": 8695427,
+				"key": "wc_productdata_options",
+				"value": [
+					{
+						"_product_block": "0",
+						"_top_content": "",
+						"_bottom_content": "",
+						"_bubble_new": "",
+						"_bubble_text": "",
+						"_custom_tab_title": "",
+						"_custom_tab": "",
+						"_product_video": "",
+						"_product_video_size": "",
+						"_product_video_placement": ""
+					}
+				]
+			},
+			{
+				"id": 8695428,
+				"key": "_drts_entity_features",
+				"value": {
+					"payment_featured_entity": {
+						"enable": 1,
+						"priority": "9",
+						"duration": 30
+					},
+					"contact_form": {
+						"enable": 1,
+						"recipients": [
+							"field_email"
+						]
+					}
+				}
+			},
+			{
+				"id": 8695429,
+				"key": "_drts_entity_features_disabled",
+				"value": {
+					"payment_taxonomy_terms": {
+						"directory_category": {
+							"num": 0
+						},
+						"directory_tag": {
+							"num": 0
+						}
+					},
+					"location_locations": {
+						"num": 0
+					},
+					"directory_photos": {
+						"num": 0
+					}
+				}
+			},
+			{
+				"id": 8695430,
+				"key": "wwpp_ignore_cat_level_wholesale_discount",
+				"value": "no"
+			},
+			{
+				"id": 8695431,
+				"key": "wwpp_ignore_role_level_wholesale_discount",
+				"value": "no"
+			},
+			{
+				"id": 8695432,
+				"key": "wwpp_product_hash",
+				"value": "602e9c63bf70f8.83539650"
+			},
+			{
+				"id": 8695433,
+				"key": "_yoast_wpseo_estimated-reading-time-minutes",
+				"value": ""
+			},
+			{
+				"id": 8695434,
+				"key": "_yoast_wpseo_primary_product_cat",
+				"value": "3405"
+			},
+			{
+				"id": 8695510,
+				"key": "wwpp_product_wholesale_visibility_filter",
+				"value": "all"
+			},
+			{
+				"id": 12254419,
+				"key": "rank_math_primary_product_cat",
+				"value": "3405"
+			},
+			{
+				"id": 12254886,
+				"key": "rank_math_news_sitemap_robots",
+				"value": "index"
+			},
+			{
+				"id": 12254887,
+				"key": "rank_math_robots",
+				"value": [
+					"index"
+				]
+			},
+			{
+				"id": 12440300,
+				"key": "_warranty_type",
+				"value": "no_warranty"
+			},
+			{
+				"id": 12440301,
+				"key": "_warranty_duration",
+				"value": "0"
+			},
+			{
+				"id": 12440302,
+				"key": "_warranty_unit",
+				"value": "day"
+			},
+			{
+				"id": 13737608,
+				"key": "rank_math_internal_links_processed",
+				"value": "1"
+			}
+		],
+		"stock_status": "instock",
+		"has_options": false,
+		"post_password": "",
+		"msrp_price": "",
+		"_links": {
+			"self": [
+				{
+					"href": "https://northcoastkeyless.com/wp-json/wc/v3/products/501229"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://northcoastkeyless.com/wp-json/wc/v3/products"
+				}
+			]
+		}
+	}
+]

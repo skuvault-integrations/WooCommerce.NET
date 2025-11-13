@@ -42,7 +42,7 @@ namespace WooCommerceNET.WooCommerce.v3
 
         /// <summary>
         /// Shipping method ID. read-only 
-        /// read-only</i> <i class="label label-info">mandatory
+        /// read-only <i class="label label-info">mandatory</i>
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string method_id { get; set; }

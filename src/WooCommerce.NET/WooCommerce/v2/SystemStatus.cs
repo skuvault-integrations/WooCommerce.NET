@@ -583,14 +583,14 @@ namespace WooCommerceNET.WooCommerce.v2
 
         /// <summary>
         /// Did the tool run successfully? read-only 
-        /// read-only</i> <i class="label label-info">write-only
+        /// read-only <i class="label label-info">write-only</i>
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public bool? success { get; set; }
 
         /// <summary>
         /// Tool return message. read-only 
-        /// read-only</i> <i class="label label-info">write-only
+        /// read-only <i class="label label-info">write-only</i>
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string message { get; set; }

@@ -23,7 +23,7 @@ namespace WooCommerceNET.WooCommerce.Legacy
 
 
         /// <summary>
-        /// A friendly name for the webhook, defaults to “Webhook created on <date>”
+        /// A friendly name for the webhook, defaults to “Webhook created on <c>date</c>”
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string name { get; set; }

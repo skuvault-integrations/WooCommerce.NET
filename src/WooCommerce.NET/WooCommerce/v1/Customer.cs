@@ -51,15 +51,15 @@ namespace WooCommerceNET.WooCommerce.v1
         public string last_name { get; set; }
 
         /// <summary>
-        /// Customer login name. Can be generated automatically from the customer’s email addrees if the option woocommerce_registration_generate_username is equal to yes cannot be changed 
-        /// cannot be changed</i> <i class="label label-info">maybe mandatory
+        /// Customer login name. Can be generated automatically from the customer’s email address if the option woocommerce_registration_generate_username is equal to yes cannot be changed
+        /// cannot be changed <i class="label label-info">maybe mandatory</i>
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string username { get; set; }
 
         /// <summary>
         /// Customer password. Can be generated automatically with wp_generate_password() if the “Automatically generate customer password” option is enabled, check the index meta for generate_password write-only 
-        /// write-only</i> <i class="label label-info">maybe mandatory
+        /// write-only <i class="label label-info">maybe mandatory</i>
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string password { get; set; }

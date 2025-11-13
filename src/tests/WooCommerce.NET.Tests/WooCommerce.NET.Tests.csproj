@@ -1,5 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+		<IsTestProject>true</IsTestProject>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
@@ -44,5 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WooCommerce.NET\WooCommerce.NET.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Serilog.Sinks.NUnit" Version="1.0.3" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Update="nunit" Version="4.4.0" />
+    <PackageReference Update="NUnit.Analyzers" Version="4.11.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="NUnit3TestAdapter" Version="5.2.0" />
   </ItemGroup>
 </Project>

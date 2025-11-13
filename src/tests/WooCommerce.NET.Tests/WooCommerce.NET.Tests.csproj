@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Files\ProductsJsonResponse_WhenDatesAreCorrect.json" />
@@ -44,5 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WooCommerce.NET\WooCommerce.NET.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Serilog.Sinks.NUnit" Version="1.0.3" />
   </ItemGroup>
 </Project>

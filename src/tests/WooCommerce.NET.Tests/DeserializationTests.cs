@@ -16,7 +16,7 @@ namespace WooCommerce.NET.Tests
 
 		public DeserializationTests()
 		{
-			_baseFilesPath = new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)).LocalPath + "\\Files\\";
+			_baseFilesPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty, "Files");
 			_v3RestApi = new RestAPI("wp-json/wc/v3", "", "");
 		}
 	
